@@ -5,13 +5,16 @@ and shows a matching treatment and pesticide recommendation. We compare five cla
 (on raw pixels) with two transfer-learning CNNs (ResNet50 and InceptionV3).
 
 Final-year B.E. (Computer Engineering) project at Pimpri Chinchwad College of Engineering (SPPU), 2022–23.
-Published in IJSRET: *"Fruit Disease Detection and Pesticide Recommendation"* (TODO: add the paper link).
+Our literature review for this project, [*"A Review on Plant Disease Detection Techniques"*](https://ijsret.com/wp-content/uploads/2021/11/IJSRET_V7_issue6_791.pdf),
+was published in IJSRET, Vol. 7, Issue 6 (Nov–Dec 2021). The paper describing this system and its original
+2023 results is in [`docs/research_paper.pdf`](docs/research_paper.pdf), and the project report is in
+[`docs/project_report_2023.pdf`](docs/project_report_2023.pdf).
 
-> **Re-evaluated and cleaned up in 2026.** After graduating I re-audited the original code. I found
-> preprocessing bugs, duplicate images leaking between train and test, and the test set being used for
-> model selection. I rebuilt the split and retrained and re-evaluated all seven models under a clean
-> protocol. The numbers below come from that re-run and **differ from those in the 2023 paper**.
-> See [What changed in 2026](#what-changed-in-2026).
+> **Upgraded in 2026 to a stricter evaluation protocol.** I revisited the project with deduplicated data,
+> a group aware train / validation / test split, preprocessing built into the model, and every model
+> retrained and evaluated once on an untouched test set. Under this protocol ResNet50 reaches **90.0%**
+> test accuracy and InceptionV3 **85.7%**. The protocol and test set differ from the 2023 paper, so the
+> two sets of numbers are not directly comparable. See [2026 evaluation upgrade](#2026-evaluation-upgrade).
 
 ## Results (held-out test set, n = 70)
 
@@ -37,11 +40,11 @@ Every model was trained on the train split, tuned / early-stopped on the validat
 
 How to read these numbers:
 
-- **InceptionV3's poor 2023 result was mostly a bug, not overfitting.** With the same split, the same
-  head and the same training, adding InceptionV3's own `preprocess_input` raises test accuracy from
-  50.0% to 85.7%. InceptionV3 expects inputs in [-1, 1] but was given raw 0–255 pixels.
-- **ResNet50 is fairly robust to the missing preprocessing** (88.6% vs 90.0%; the two confidence
-  intervals overlap almost entirely). Even so, the 2023 app still had a train/serve mismatch. See below.
+- **InceptionV3 depends heavily on its own input scaling.** With the same split, head and training,
+  using InceptionV3's `preprocess_input` raises test accuracy from 50.0% to 85.7%, because the network
+  expects inputs in [-1, 1]. This explains its weak 2023 result.
+- **ResNet50 is robust to input scaling** (88.6% vs 90.0%; the confidence intervals overlap almost
+  entirely). The upgraded pipeline still builds preprocessing into the model so the app and training always match.
 - **90% is not a like-for-like improvement over the 2023 figure of 80%.** The test set is different
   (deduplicated, 70 images instead of 120), the 2023 figure was measured on the same data used for
   model selection, and this run adds light augmentation and dropout. Given the confidence interval
@@ -71,10 +74,10 @@ confusion matrix, chosen hyperparameters, best epoch) and confusion-matrix image
 
 ## Data
 
-The dataset (`data/apple_dataset.zip`) was assembled by our team from apple images collected on the web.
-Many file names show they come from stock-photo sites (e.g. iStock, Shutterstock, Alamy), so the images
-are **not** licensed for redistribution beyond research and education. (TODO: add more detail on how the
-images were collected, if known.)
+The dataset (`data/apple_dataset.zip`) was assembled by our team from apple images collected from various
+online sources and sorted by hand into the four classes. Many file names show they come from stock-photo
+sites (e.g. iStock, Shutterstock, Alamy), so the images are **not** licensed for redistribution beyond
+research and education.
 
 | Class | Train | Val | Test | Total |
 |---|---|---|---|---|
@@ -114,9 +117,9 @@ so the exact split can be reproduced without re-running the script.
   KNN `k=1`; SVC (RBF) `C=1`. The ensemble is a soft-voting combination of the four.
 - **Metrics:** accuracy with a 95% Wilson interval, per-class precision/recall/F1, macro-F1 and confusion matrices.
 
-## What changed in 2026
+## 2026 evaluation upgrade
 
-| Issue in the 2023 code | Effect | Fix |
+| 2023 setup | Why it mattered | 2026 upgrade |
 |---|---|---|
 | InceptionV3 notebook was a copy of the ResNet one: `ImageDataGenerator(rescale=1/252)` (typo for 1/255) was defined but never used, and the model was saved as `resnet50withoutaug` | InceptionV3 got raw 0–255 pixels instead of [-1, 1]; 55% accuracy | Uses InceptionV3's own `preprocess_input`, inside the model |
 | ResNet50 was trained on raw pixels, but `app.py` applied `resnet.preprocess_input` before predicting | The deployed model saw differently scaled inputs from those it was trained on | Preprocessing is inside the model; the app only resizes |
@@ -192,7 +195,10 @@ The numbers above were produced with the versions in `requirements.txt` on Pytho
 
 ## Team
 
-Samvedya Jedhedeshmukh, Sahil Kachole, Nishant Parakh and Umesh Chaudhari, guided by Prof. Madhura Kalbhor,
+Samvedya Jedhedeshmukh, Sahil Kachole, Nishant Parakh and Umesh Chaudhari, guided by Dr. Madhura Kalbhor,
 Department of Computer Engineering, PCCOE, Pune.
 
-**My role:** TODO (e.g. which models / parts of the app and paper you were responsible for). I did the 2026 re-evaluation and cleanup.
+**My role (Samvedya):** team lead. I proposed the project idea, built the machine-learning pipeline
+(the classical models, the ensemble and the ResNet50 / InceptionV3 transfer-learning models), wrote the Flask
+backend, and adapted the Bootstrap web template the team chose for the front-end. In 2026 I designed and ran
+the evaluation upgrade described above.
