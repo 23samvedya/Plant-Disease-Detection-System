@@ -1,0 +1,63 @@
+{
+  "model": "resnet50_nopreprocess",
+  "split": "test",
+  "n": 70,
+  "accuracy": 0.8857142857142857,
+  "accuracy_ci95": [
+    0.7903556803979788,
+    0.9409394161329738
+  ],
+  "macro_f1": 0.8752367031720407,
+  "per_class": {
+    "Blotch_Apple": {
+      "precision": 0.8571428571428571,
+      "recall": 0.9,
+      "f1-score": 0.8780487804878049,
+      "support": 20.0
+    },
+    "Normal_Apple": {
+      "precision": 0.8461538461538461,
+      "recall": 0.8461538461538461,
+      "f1-score": 0.8461538461538461,
+      "support": 13.0
+    },
+    "Rot_Apple": {
+      "precision": 0.9545454545454546,
+      "recall": 1.0,
+      "f1-score": 0.9767441860465116,
+      "support": 21.0
+    },
+    "Scab_Apple": {
+      "precision": 0.8571428571428571,
+      "recall": 0.75,
+      "f1-score": 0.8,
+      "support": 16.0
+    }
+  },
+  "confusion_matrix": [
+    [
+      18,
+      0,
+      0,
+      2
+    ],
+    [
+      2,
+      11,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      21,
+      0
+    ],
+    [
+      1,
+      2,
+      1,
+      12
+    ]
+  ]
+}

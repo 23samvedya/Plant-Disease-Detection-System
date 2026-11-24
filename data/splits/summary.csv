@@ -1,0 +1,6 @@
+label,train,val,test,all
+Blotch_Apple,93,20,20,133
+Normal_Apple,59,13,13,85
+Rot_Apple,100,21,21,142
+Scab_Apple,78,16,16,110
+Total,330,70,70,470

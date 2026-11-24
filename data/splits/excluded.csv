@@ -1,0 +1,3 @@
+path,label,reason
+data/raw/apple_disease_classification/Train/Blotch_Apple/59.jpg,Blotch_Apple,near-duplicate of an image with a different label
+data/raw/apple_disease_classification/Train/Scab_Apple/AnyConv.com__images (54).jpg,Scab_Apple,near-duplicate of an image with a different label

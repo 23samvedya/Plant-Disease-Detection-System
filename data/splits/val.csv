@@ -1,0 +1,71 @@
+path,label,original_folder,md5
+data/raw/apple_disease_classification/Test/Blotch_Apple/128.jpg,Blotch_Apple,Test,3108d4d733923262860746244befd53c
+data/raw/apple_disease_classification/Test/Blotch_Apple/141.jpg,Blotch_Apple,Test,6defab2a27341fe44f2ff975558ce93c
+data/raw/apple_disease_classification/Test/Normal_Apple/33.jpg,Normal_Apple,Test,c2b3c96efa7f4e6d209b4bfc68cdeb5f
+data/raw/apple_disease_classification/Test/Normal_Apple/56.jpg,Normal_Apple,Test,43c4e60102ea7168172994971ef260ab
+data/raw/apple_disease_classification/Test/Normal_Apple/81.jpg,Normal_Apple,Test,df14aeb172e4f1afd97f78fabc413451
+data/raw/apple_disease_classification/Test/Normal_Apple/images (5).jpg,Normal_Apple,Test,25dd242abd3ddc0fbf11c5c38564cf6d
+data/raw/apple_disease_classification/Test/Rot_Apple/2an7852.jpg,Rot_Apple,Test,554527a37b5bac78ad9495fa51f56456
+data/raw/apple_disease_classification/Test/Rot_Apple/fj4tej.jpg,Rot_Apple,Test,c6ac4a5456bd943afb7e4dc0209697f6
+data/raw/apple_disease_classification/Test/Rot_Apple/istockphoto-654588270-612x612.jpg,Rot_Apple,Test,29d8ce5976965605538e6b1140bfdd47
+data/raw/apple_disease_classification/Test/Rot_Apple/istockphoto-859980682-612x612.jpg,Rot_Apple,Test,5cdfef6970960599428fe3336b76004d
+data/raw/apple_disease_classification/Test/Scab_Apple/2ea9em1.jpg,Scab_Apple,Test,23c8455264c5633fa8eec06697c4b84e
+data/raw/apple_disease_classification/Test/Scab_Apple/AnyConv.com__download (4).jpg,Scab_Apple,Test,69c8937f66f4ab55835161729e2754fa
+data/raw/apple_disease_classification/Test/Scab_Apple/ad3gfw.jpg,Scab_Apple,Test,14fb20285258815f8dd48818c95c7e0b
+data/raw/apple_disease_classification/Test/Scab_Apple/dw027a.jpg,Scab_Apple,Test,8b94df0dd89dcf3fa5160b0a664d4881
+data/raw/apple_disease_classification/Train/Blotch_Apple/10.jpg,Blotch_Apple,Train,483d08ff114fc30cecd39c0bd86a4a38
+data/raw/apple_disease_classification/Train/Blotch_Apple/101.jpg,Blotch_Apple,Train,931fdd11953c5be24569b03b6bb719f1
+data/raw/apple_disease_classification/Train/Blotch_Apple/106.jpg,Blotch_Apple,Train,ead25467e73fb5fac47c9b247b62c7b8
+data/raw/apple_disease_classification/Train/Blotch_Apple/11.jpg,Blotch_Apple,Train,fb3e4844340a391a5daf2b52a38ab0ee
+data/raw/apple_disease_classification/Train/Blotch_Apple/112.jpg,Blotch_Apple,Train,768eb760fcabb77c7db344e7b289351f
+data/raw/apple_disease_classification/Train/Blotch_Apple/119.jpg,Blotch_Apple,Train,c9e80c30b8867e0b71b3f98dc5226f31
+data/raw/apple_disease_classification/Train/Blotch_Apple/14.jpg,Blotch_Apple,Train,3b7223682b831a93e1acafe89ab3cfaf
+data/raw/apple_disease_classification/Train/Blotch_Apple/22.jpg,Blotch_Apple,Train,b5420f3dc4b9d68016eba8bda26395dc
+data/raw/apple_disease_classification/Train/Blotch_Apple/23.jpg,Blotch_Apple,Train,2e27b518adb99ccd186ea83d88a8d652
+data/raw/apple_disease_classification/Train/Blotch_Apple/33.jpg,Blotch_Apple,Train,f19903f62845886a8451518833c6a934
+data/raw/apple_disease_classification/Train/Blotch_Apple/40.jpg,Blotch_Apple,Train,8571a66aabc3e1f8367bee7d1380f24b
+data/raw/apple_disease_classification/Train/Blotch_Apple/46.jpg,Blotch_Apple,Train,bca08956fceeabd662dcc30e8199bc81
+data/raw/apple_disease_classification/Train/Blotch_Apple/55.jpg,Blotch_Apple,Train,b5408bdb774f60da46890db62dfa9861
+data/raw/apple_disease_classification/Train/Blotch_Apple/57.jpg,Blotch_Apple,Train,6bef7da9f1bc261e115be91dd8bf121e
+data/raw/apple_disease_classification/Train/Blotch_Apple/64.jpg,Blotch_Apple,Train,ecbc9f1ab12f55c75dc7fa4d03b70805
+data/raw/apple_disease_classification/Train/Blotch_Apple/67.jpg,Blotch_Apple,Train,d2174f50cf2bd5c9696df7115fa5073d
+data/raw/apple_disease_classification/Train/Blotch_Apple/83.jpg,Blotch_Apple,Train,2956ffaabdfe81891080ff0968372bb9
+data/raw/apple_disease_classification/Train/Blotch_Apple/88.jpg,Blotch_Apple,Train,1748509e7aee71f0fcdc73aabcf2f77e
+data/raw/apple_disease_classification/Train/Normal_Apple/AnyConv.com__download (16).jpg,Normal_Apple,Train,a9b4edb1c6a4bcc65e9ad90157e722c5
+data/raw/apple_disease_classification/Train/Normal_Apple/AnyConv.com__download (20).jpg,Normal_Apple,Train,12d3c199f9aa2435b03918ab54fb8a69
+data/raw/apple_disease_classification/Train/Normal_Apple/AnyConv.com__download (5).jpg,Normal_Apple,Train,9a6f81f2b83c66411c8c6cc9b9a570fb
+data/raw/apple_disease_classification/Train/Normal_Apple/AnyConv.com__download (7).jpg,Normal_Apple,Train,14eddcd7957d715e93fbceedf0fc9a2c
+data/raw/apple_disease_classification/Train/Normal_Apple/AnyConv.com__images (11).jpg,Normal_Apple,Train,030d2ca7d231273a115e382a24fbf374
+data/raw/apple_disease_classification/Train/Normal_Apple/AnyConv.com__images (21).jpg,Normal_Apple,Train,9580ff5546469e9be85183bc4427f168
+data/raw/apple_disease_classification/Train/Normal_Apple/AnyConv.com__images (6).jpg,Normal_Apple,Train,0be7d5fa7986910bdaf662517869fa1a
+data/raw/apple_disease_classification/Train/Normal_Apple/apple-fruit-red-apple-cutting-board.jpg,Normal_Apple,Train,4f7a83deadf0dcddc74aeca0c6d4a825
+data/raw/apple_disease_classification/Train/Normal_Apple/images (2).jpg,Normal_Apple,Train,7fd02c0485fa08d2833b7af5470240e9
+data/raw/apple_disease_classification/Train/Rot_Apple/2aandb5.jpg,Rot_Apple,Train,568ffb5a8d89ccd14cbe47ec630dfb7f
+data/raw/apple_disease_classification/Train/Rot_Apple/2an781y.jpg,Rot_Apple,Train,2649ce20e041c50a5db8076448bd11da
+data/raw/apple_disease_classification/Train/Rot_Apple/2bfd8p1.jpg,Rot_Apple,Train,5305ea8d3749dc274d0aeb85b0fbe682
+data/raw/apple_disease_classification/Train/Rot_Apple/2brp292.jpg,Rot_Apple,Train,08b0552217b7a5afdebbbd2876544871
+data/raw/apple_disease_classification/Train/Rot_Apple/2cf6ynk.jpg,Rot_Apple,Train,e05339e84cc65d347cfc2ce149f514cf
+data/raw/apple_disease_classification/Train/Rot_Apple/2ckgjmg.jpg,Rot_Apple,Train,6d62537d95dfacd538c763d67a3857d0
+data/raw/apple_disease_classification/Train/Rot_Apple/2d67ynd.jpg,Rot_Apple,Train,d3c881a783fc8983277db93c0f600b77
+data/raw/apple_disease_classification/Train/Rot_Apple/atwt5f.jpg,Rot_Apple,Train,97f34f59f56d3e1e2f6a6175c83b1b3a
+data/raw/apple_disease_classification/Train/Rot_Apple/f1jt8w.jpg,Rot_Apple,Train,b5743ce7ecb162000222b903dcf44246
+data/raw/apple_disease_classification/Train/Rot_Apple/h4aac0.jpg,Rot_Apple,Train,0926c68ce74ea83846d62d3f8c68731c
+data/raw/apple_disease_classification/Train/Rot_Apple/istockphoto-172469779-612x612.jpg,Rot_Apple,Train,7e581f1d953fd9c82be7e53f0fa073a9
+data/raw/apple_disease_classification/Train/Rot_Apple/istockphoto-469081934-612x612.jpg,Rot_Apple,Train,667ae2d594f5dfb7acd35e7f4a2fb5cd
+data/raw/apple_disease_classification/Train/Rot_Apple/istockphoto-685523256-612x612.jpg,Rot_Apple,Train,18fbc72c7a2b7ca5895babaa999484cf
+data/raw/apple_disease_classification/Train/Rot_Apple/rr7r25.jpg,Rot_Apple,Train,983a903ce1076002003f99eed346c6af
+data/raw/apple_disease_classification/Train/Rot_Apple/rtw6gy.jpg,Rot_Apple,Train,1cb1b629e88ac6ea05ab55aef2023752
+data/raw/apple_disease_classification/Train/Rot_Apple/t83m2m.jpg,Rot_Apple,Train,2f8aa4a4c8b0b2835abf489bbe2ca8cb
+data/raw/apple_disease_classification/Train/Rot_Apple/td97b2.jpg,Rot_Apple,Train,fa3d08348520416d7b1a2069d8bd18f0
+data/raw/apple_disease_classification/Train/Scab_Apple/2deefk6.jpg,Scab_Apple,Train,466a953b6df38f1e653692f7dd2a59c7
+data/raw/apple_disease_classification/Train/Scab_Apple/AnyConv.com__images (19).jpg,Scab_Apple,Train,bf32f7b1639007c71a8970ea5ab56dca
+data/raw/apple_disease_classification/Train/Scab_Apple/AnyConv.com__images (48).jpg,Scab_Apple,Train,7244476fd438ed29a2a8bf5877336ae0
+data/raw/apple_disease_classification/Train/Scab_Apple/AnyConv.com__images (62).jpg,Scab_Apple,Train,0897e0e28dd80104f035c26026ec770d
+data/raw/apple_disease_classification/Train/Scab_Apple/AnyConv.com__images (77).jpg,Scab_Apple,Train,fd075c6e2031202fab80a86b08d3a585
+data/raw/apple_disease_classification/Train/Scab_Apple/AnyConv.com__images (82).jpg,Scab_Apple,Train,1cd8ad7d7aad3092822237aa54fdd25c
+data/raw/apple_disease_classification/Train/Scab_Apple/AnyConv.com__images (89).jpg,Scab_Apple,Train,079d4061d42c73f005e183c853e945ea
+data/raw/apple_disease_classification/Train/Scab_Apple/DSC02039.jpg,Scab_Apple,Train,159fdc4cabef5617ef170aeec74aff8f
+data/raw/apple_disease_classification/Train/Scab_Apple/bwi-blw044718.jpg,Scab_Apple,Train,f554e8dea60752e1197999a92e1f6dbf
+data/raw/apple_disease_classification/Train/Scab_Apple/den1h8.jpg,Scab_Apple,Train,eb6891032a137647d555f227c32243d6
+data/raw/apple_disease_classification/Train/Scab_Apple/gwg-bev1596.jpg,Scab_Apple,Train,996df94f9ef83e2dcb39b9179dbde7ec
+data/raw/apple_disease_classification/Train/Scab_Apple/mckaba.jpg,Scab_Apple,Train,17e7e408440159bbf117c64b3e2f6c47

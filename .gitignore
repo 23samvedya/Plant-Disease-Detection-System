@@ -1,0 +1,19 @@
+# Python
+__pycache__/
+*.pyc
+.venv/
+.ipynb_checkpoints/
+
+# Extracted dataset (recreate with: python -m src.make_split, which unzips data/apple_dataset.zip)
+data/raw/
+
+# Trained models are large; they are published as GitHub release assets instead (see README)
+models/
+*.h5
+*.keras
+*.pkl
+
+# Training logs
+results/logs/
+
+.DS_Store

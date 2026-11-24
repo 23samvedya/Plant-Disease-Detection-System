@@ -106,12 +106,14 @@
                         <th>{{ data['fruit_name'] }}</th>
                     </thead> -->
                     <thead>
-                        <th>Predected Disease</th>
-                        <th>Treatment Recommendation </th>
+                        <th>Predicted Disease</th>
+                        <th>Confidence</th>
+                        <th>Treatment Recommendation</th>
                         <th>Pesticide Recommendation</th>
                     </thead>
                     <tbody>
                         <td>{{ data['Class'] }}</td>
+                        <td>{{ data['Confidence'] }}</td>
                         <td>{{ data['Treatment'] }}</td>
                         <td>{{ data['Pesticide'] }}</td>
                     </tbody>
