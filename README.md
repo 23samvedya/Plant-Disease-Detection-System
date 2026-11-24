@@ -5,7 +5,10 @@ and shows a matching treatment and pesticide recommendation. We compare five cla
 (on raw pixels) with two transfer-learning CNNs (ResNet50 and InceptionV3).
 
 Final-year B.E. (Computer Engineering) project at Pimpri Chinchwad College of Engineering (SPPU), 2022–23.
-Published in IJSRET: *"Fruit Disease Detection and Pesticide Recommendation"* (TODO: add the paper link).
+Our literature review for this project, [*"A Review on Plant Disease Detection Techniques"*](https://ijsret.com/wp-content/uploads/2021/11/IJSRET_V7_issue6_791.pdf),
+was published in IJSRET, Vol. 7, Issue 6 (Nov–Dec 2021). The paper describing this system and its original
+2023 results is in [`docs/research_paper.pdf`](docs/research_paper.pdf), and the project report is in
+[`docs/project_report_2023.pdf`](docs/project_report_2023.pdf).
 
 > **Re-evaluated and cleaned up in 2026.** After graduating I re-audited the original code. I found
 > preprocessing bugs, duplicate images leaking between train and test, and the test set being used for
@@ -71,10 +74,10 @@ confusion matrix, chosen hyperparameters, best epoch) and confusion-matrix image
 
 ## Data
 
-The dataset (`data/apple_dataset.zip`) was assembled by our team from apple images collected on the web.
-Many file names show they come from stock-photo sites (e.g. iStock, Shutterstock, Alamy), so the images
-are **not** licensed for redistribution beyond research and education. (TODO: add more detail on how the
-images were collected, if known.)
+The dataset (`data/apple_dataset.zip`) was assembled by our team from apple images collected from various
+online sources and sorted by hand into the four classes. Many file names show they come from stock-photo
+sites (e.g. iStock, Shutterstock, Alamy), so the images are **not** licensed for redistribution beyond
+research and education.
 
 | Class | Train | Val | Test | Total |
 |---|---|---|---|---|
@@ -195,4 +198,7 @@ The numbers above were produced with the versions in `requirements.txt` on Pytho
 Samvedya Jedhedeshmukh, Sahil Kachole, Nishant Parakh and Umesh Chaudhari, guided by Prof. Madhura Kalbhor,
 Department of Computer Engineering, PCCOE, Pune.
 
-**My role:** TODO (e.g. which models / parts of the app and paper you were responsible for). I did the 2026 re-evaluation and cleanup.
+**My role (Samvedya):** team lead. I proposed the project idea, built the machine-learning pipeline
+(the classical models, the ensemble and the ResNet50 / InceptionV3 transfer-learning models), wrote the Flask
+backend, and adapted the Bootstrap web template the team chose for the front-end. In 2026 I re-audited the
+project and did the re-evaluation and cleanup described above.
