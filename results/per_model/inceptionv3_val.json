@@ -1,0 +1,72 @@
+{
+  "model": "inceptionv3",
+  "split": "val",
+  "n": 70,
+  "accuracy": 0.8142857142857143,
+  "accuracy_ci95": [
+    0.7077420255730713,
+    0.888128053081779
+  ],
+  "macro_f1": 0.8161172161172161,
+  "per_class": {
+    "Blotch_Apple": {
+      "precision": 0.7894736842105263,
+      "recall": 0.75,
+      "f1-score": 0.7692307692307693,
+      "support": 20.0
+    },
+    "Normal_Apple": {
+      "precision": 0.8666666666666667,
+      "recall": 1.0,
+      "f1-score": 0.9285714285714286,
+      "support": 13.0
+    },
+    "Rot_Apple": {
+      "precision": 0.9473684210526315,
+      "recall": 0.8571428571428571,
+      "f1-score": 0.9,
+      "support": 21.0
+    },
+    "Scab_Apple": {
+      "precision": 0.6470588235294118,
+      "recall": 0.6875,
+      "f1-score": 0.6666666666666666,
+      "support": 16.0
+    }
+  },
+  "confusion_matrix": [
+    [
+      15,
+      0,
+      1,
+      4
+    ],
+    [
+      0,
+      13,
+      0,
+      0
+    ],
+    [
+      0,
+      1,
+      18,
+      2
+    ],
+    [
+      4,
+      1,
+      0,
+      11
+    ]
+  ],
+  "best_epoch": 10,
+  "hyperparameters": {
+    "backbone": "inceptionv3",
+    "no_preprocess": false,
+    "epochs": 60,
+    "batch_size": 32,
+    "lr": 0.001,
+    "patience": 10
+  }
+}

@@ -1,0 +1,70 @@
+{
+  "model": "ensemble",
+  "split": "val",
+  "n": 70,
+  "accuracy": 0.7142857142857143,
+  "accuracy_ci95": [
+    0.5994958195463383,
+    0.8067792340819687
+  ],
+  "macro_f1": 0.6883399209486165,
+  "per_class": {
+    "Blotch_Apple": {
+      "precision": 0.68,
+      "recall": 0.85,
+      "f1-score": 0.7555555555555555,
+      "support": 20.0
+    },
+    "Normal_Apple": {
+      "precision": 0.8888888888888888,
+      "recall": 0.6153846153846154,
+      "f1-score": 0.7272727272727273,
+      "support": 13.0
+    },
+    "Rot_Apple": {
+      "precision": 0.76,
+      "recall": 0.9047619047619048,
+      "f1-score": 0.8260869565217391,
+      "support": 21.0
+    },
+    "Scab_Apple": {
+      "precision": 0.5454545454545454,
+      "recall": 0.375,
+      "f1-score": 0.4444444444444444,
+      "support": 16.0
+    }
+  },
+  "confusion_matrix": [
+    [
+      17,
+      0,
+      0,
+      3
+    ],
+    [
+      2,
+      8,
+      1,
+      2
+    ],
+    [
+      1,
+      1,
+      19,
+      0
+    ],
+    [
+      5,
+      0,
+      5,
+      6
+    ]
+  ],
+  "members": [
+    "decision_tree",
+    "random_forest",
+    "knn",
+    "svc"
+  ],
+  "voting": "soft"
+}

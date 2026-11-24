@@ -1,0 +1,67 @@
+{
+  "model": "decision_tree",
+  "split": "val",
+  "n": 70,
+  "accuracy": 0.6571428571428571,
+  "accuracy_ci95": [
+    0.5403933101563949,
+    0.7575417291710302
+  ],
+  "macro_f1": 0.630568167153533,
+  "per_class": {
+    "Blotch_Apple": {
+      "precision": 0.6666666666666666,
+      "recall": 0.7,
+      "f1-score": 0.6829268292682927,
+      "support": 20.0
+    },
+    "Normal_Apple": {
+      "precision": 0.5714285714285714,
+      "recall": 0.6153846153846154,
+      "f1-score": 0.5925925925925926,
+      "support": 13.0
+    },
+    "Rot_Apple": {
+      "precision": 0.782608695652174,
+      "recall": 0.8571428571428571,
+      "f1-score": 0.8181818181818182,
+      "support": 21.0
+    },
+    "Scab_Apple": {
+      "precision": 0.5,
+      "recall": 0.375,
+      "f1-score": 0.42857142857142855,
+      "support": 16.0
+    }
+  },
+  "confusion_matrix": [
+    [
+      14,
+      3,
+      0,
+      3
+    ],
+    [
+      2,
+      8,
+      0,
+      3
+    ],
+    [
+      0,
+      3,
+      18,
+      0
+    ],
+    [
+      5,
+      0,
+      5,
+      6
+    ]
+  ],
+  "best_params": {
+    "max_depth": 5,
+    "min_samples_leaf": 1
+  }
+}

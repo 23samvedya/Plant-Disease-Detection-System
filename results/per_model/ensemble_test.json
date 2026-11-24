@@ -1,0 +1,63 @@
+{
+  "model": "ensemble",
+  "split": "test",
+  "n": 70,
+  "accuracy": 0.6428571428571429,
+  "accuracy_ci95": [
+    0.5258817704420135,
+    0.7449682653101913
+  ],
+  "macro_f1": 0.607191655110531,
+  "per_class": {
+    "Blotch_Apple": {
+      "precision": 0.53125,
+      "recall": 0.85,
+      "f1-score": 0.6538461538461539,
+      "support": 20.0
+    },
+    "Normal_Apple": {
+      "precision": 0.8,
+      "recall": 0.6153846153846154,
+      "f1-score": 0.6956521739130435,
+      "support": 13.0
+    },
+    "Rot_Apple": {
+      "precision": 0.85,
+      "recall": 0.8095238095238095,
+      "f1-score": 0.8292682926829268,
+      "support": 21.0
+    },
+    "Scab_Apple": {
+      "precision": 0.375,
+      "recall": 0.1875,
+      "f1-score": 0.25,
+      "support": 16.0
+    }
+  },
+  "confusion_matrix": [
+    [
+      17,
+      0,
+      1,
+      2
+    ],
+    [
+      3,
+      8,
+      1,
+      1
+    ],
+    [
+      0,
+      2,
+      17,
+      2
+    ],
+    [
+      12,
+      0,
+      1,
+      3
+    ]
+  ]
+}
